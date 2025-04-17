@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .content-box {
+      width: 300px;
+      height: 200px;
+      padding: 20px;
+      border: 5px solid #000;
+      margin: 20px;
+      background-color: #6898b3;
+      box-sizing: content-box; /* Default value */
+    }
+    .border-box {
+      width: 300px;
+      height: 200px;
+      padding: 20px;
+      border: 5px solid #000;
+      margin: 20px;
+      background-color: #6898b3;
+      box-sizing: border-box; /* Default value */
+    }
+    .initial-scale {
+      display: block;
+      width: 300px;
+      height: 200px;
+      padding: 20px;
+      border: 5px solid #000;
+      margin: 20px;
+      background-color: #274b75;
+      box-sizing: border-box; /* Default value */
+    }
+    p::first-letter {
+      font-size: 2em;
+      font-weight: bold;
+      color: #ff6347; /* Tomato color */
+    }
+    div>p{
+      color: chartreuse;
+    }
+    h1,h2{
+      color: rgb(39, 69, 69);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div>
+      <h1>content-box</h1>
+      <p class="content-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+      </p>
+    </div>
+    <h1>border-box</h1>
+    <p class="border-box">Lorem ipsum dolor sit amet con
+      sectetur adipisicing elit. Quaerat, odit?</p>
+      <h2>Inline vs Block</h2>
+      <p>Lorem ipsum dolor sit amet consectetur <span class="initial-scale">adipisicing</span>adipisicing elit. Qui, ipsam, optio reiciendis voluptatem fuga ut minima suscipit necessitatibus eius iure accusantium magnam natus labore commodi quae inventore tempora tenetur omnis.</p>
+  </div>
+  
+</body>
+</html>
